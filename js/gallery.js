@@ -93,7 +93,7 @@ containerForeImage.addEventListener("click", cardClick)
 
 function cardClick(event) {
     event.preventDefault();
-    if (event.currentTarget === event.turget) {
+    if (event.currentTarget === event.target) {
         return;
     }
 
@@ -107,7 +107,8 @@ function cardClick(event) {
     />
     </div>
 `);
-      instance.show();
+    console.log(`${event.target.dataset.source}`);
+    instance.show();
 }
 
 
